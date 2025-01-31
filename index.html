@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Api Project</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- navbar start  -->
+     <nav>
+        <header  class="flex justify-between w-10/12 mx-auto my-2">
+            <div class="flex">
+                <img src="images/logo.webp">
+                <h1 class="text-2xl font-serif text-orange-300">Peddy</h1>
+            </div>
+            <ul class="flex gap-5 text-xl font-serif"> 
+                <li>Home</li>
+                <li>Shope</li>
+                <li>Contact</li>
+            </ul>
+            <div>
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                </span>
+            </div>
+        </header>
+     </nav>
+
+
+     <!-- Hero section  -->
+     <main class="px-4 sm:px-8 md:px-12">
+      <p class="text-center text-sm sm:text-base md:text-lg">Bringing Families Together ❤️‍🔥</p>
+    
+      <h1 class="my-5 text-center text-2xl sm:text-3xl md:text-4xl font-serif">Your Path to Adoption Starts Here</h1>
+    
+      <p class="lg:w-[750px] mx-auto font-serif text-base sm:text-lg md:text-xl text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+    
+      <div class="flex justify-center items-center my-5">
+        <button class="btn btn-accent sm:inline hidden">View More</button>
+      </div>
+    
+      <div class="flex justify-center items-center">
+        <img src="images/pet.webp" alt="Adorable pet" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-md" />
+      </div>
+    </main>
+    
+
+
+ <!-- text section  -->
+  <section>
+    <h1 class="text-center text-3xl font-serif font-bold">Adopt  Your  Best Friend</h1>
+    <p class="mx-auto text-xl font-serif lg:w-[752px] h-[52px] my-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+  </section>
+
+
+ <!-- catagoery button load section  -->
+  <div id="Button-load" class="flex justify-center items-center gap-5">
+</div>
+<!-- 4th section  -->
+<section class="flex justify-between">
+    <div>
+        <h1 class="text-2xl font-serif ">Best For You</h1>
+    </div>
+    <button id="sortBtn" class="btn btn-active btn-primary ">Short Price</button>
+    
+</section>
+
+  <!-- all data load function  -->
+ <section class="flex justify-between">
+  <div id="cards" class="lg:grid grid-cols-3 gap-5">
+
+  </div>
+  <!-- right section  -->
+  
+
+ </section>
+
+
+
+
+
+
+   <!-- Open the modal using ID.showModal() method -->
+<button class="btn hidden" onclick="modal-data.showModal()">open modal</button>
+<dialog id="modal-data" class="modal">
+  <div class="modal-box">
+    <div id="modal-content">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- Adopts Modal Button Create  -->
+<button class="btn hidden" onclick="Adopted-data.showModal()">open modal</button>
+<dialog id="Adopted-data" class="modal">
+  <div class="modal-box">
+    <div id="Adopted-content">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+<!-- Footer section start  -->
+   <footer class="footer bg-base-200 text-base-content p-10">
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+    <form>
+      <h6 class="footer-title">Newsletter</h6>
+      <fieldset class="form-control w-80">
+        <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label>
+        <div class="join">
+          <input
+            type="text"
+            placeholder="username@site.com"
+            class="input input-bordered join-item" />
+          <button class="btn btn-primary join-item">Subscribe</button>
+        </div>
+      </fieldset>
+    </form>
+  </footer>
+
+
+
+
+
+
+    <script src="final.js"></script>
+</body>
+</html>
